@@ -12,6 +12,8 @@ const api = {
   post_repos(github) {
     return axios.post(apiGithub + "users/", { users: github });
   },
+  get_all_users(){
+    return axios.get(apiGithub + "users");
+  }
 };
-
 export default api;
